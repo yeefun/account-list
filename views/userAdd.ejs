@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form action="/userAdd" method="post">
+      <h1><%= title %></h1>
+      <div>
+        <label>username:</label>
+        <input type="text" name="username" placeholder="username" />
+      </div>
+      <div>
+        <label>password:</label>
+        <input type="password" name="password" placeholder="password">
+      </div>
+      <div>
+        <label>email:</label>
+        <input type="email" name="email" placeholder="email">
+      </div>
+      <div>
+        <button type='submit'>Submit</button>
+        <button type='reset'>Reset</button>
+      </div>
+    </form>
+    <a href="/">Back</a>
+  </body>
+</html>

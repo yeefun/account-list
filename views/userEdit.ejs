@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form action="/userEdit" method="post">
+      <h1><%= title %></h1>
+      <input type="hidden" name="id" value="<%=data[0].id  %>" />
+      <div>
+        <label>username:</label>
+        <input type="text" placeholder="username" value="<%= data[0].username %>" readonly />
+      </div>
+      <div>
+        <label>password:</label>
+        <input type="text" name="password" placeholder="password" value="<%= data[0].password %>" />
+      </div>
+      <div>
+        <label>email:</label>
+        <input type="email" name="email" placeholder="email" value="<%= data[0].email %>">
+      </div>
+      <div>
+        <button type='submit'>Submit</button>
+        <button type='reset'>Reset</button>
+      </div>
+    </form>
+    <a href="/">Back</a>
+  </body>
+</html>
